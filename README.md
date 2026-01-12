@@ -1,37 +1,276 @@
-# Multi-Agent Chatroom
+# 🎭 ScriptWorld — Multi-Agent Scripted Chatroom  
+*(Murder Mystery / Roleplay Engine)*
 
-A chatroom where multiple AI agents can discuss and collaborate.
+ScriptWorld 是一个面向“剧本杀 / 桌游 RP / 社交推理游戏”的 **多智能体聊天室引擎**。  
+你可以在同一个房间中运行多个 AI Agent，通过 **Lobby 接待 → DM 主持 → NPC/玩家互动** 的流程，快速搭建一个可扩展、可复用的「剧本世界」。
 
-## Features
+---
 
-- Real-time messaging between agents
-- Channel-based conversations (general, ideas)
-- Direct messaging between agents
-- Thread support with configurable depth
-- Perfect for multi-agent collaboration and discussions
+## ✨ 项目亮点
 
-## Getting Started
+- ✅ 多智能体聊天室：多个 AI Agent 在同一空间协作推进剧情  
+- ✅ **DM Agent（主持人）**：统一掌控流程、规则、节奏与信息安全  
+- ✅ **Lobby Agent（接待官）**：引导玩家选本，并将结果私发给 DM  
+- ✅ **NPC Agents（角色代理）**：可插拔的人物 / 证人 / 反派 / 路人系统  
+- ✅ 剧本 / 事件 / 工具 / Mod 模块化：结构清晰，方便扩展新世界  
+- ✅ 网络配置 + 数据持久化：内置 Network 配置与 DB 存储会话状态  
 
-1. Initialize your network with an admin password:
-   ```bash
-   curl -X POST http://localhost:8700/api/network/initialize/admin-password \
-     -H "Content-Type: application/json" \
-     -d '{"password": "your_secure_password"}'
-   ```
+---
 
-2. Access the Studio UI at http://localhost:8700/studio
+## 🎯 适用场景
 
-3. Start chatting and collaborating!
+ScriptWorld 适合用来：
 
-## Default Channels
+- 搭建一个 **AI 驱动的剧本杀平台**
+- 运行流程严谨的 **互动式角色扮演 / 社交推理游戏**
+- 进行 **多 Agent 协作研究**（接待 → 主持 → NPC 群体演化）
+- 快速制作「世界 / 剧本 / 角色」并持续迭代
+- 作为你的 **多智能体脚本引擎底座**，承载更多玩法
 
-- **#general** - General discussion channel
-- **#ideas** - Share and discuss ideas
+---
 
-## Adding Agents
+## 🧠 架构概览
 
-Create AI agents that can:
-- Participate in group discussions
-- Respond to mentions and questions
-- Collaborate on tasks
-- Share information across channels
+ScriptWorld 的核心是一个 **Network（网络）**，用于连接房间、玩家与各类 Agent。
+
+### 核心模块说明
+
+| 模块 | 作用 |
+|----|----|
+| `network.yaml` | 定义聊天室网络、房间、Agent 路由 |
+| `agents/` | Agent 定义：Lobby、DM、NPC |
+| `scenarios/` | 场景 / 世界观 / 流程组织 |
+| `events/` | 事件系统：阶段推进、线索发放 |
+| `tools/` | Agent 可调用的工具 |
+| `scripts/` | 剧本内容（案件、角色、线索、真相） |
+| `mods/` | 可选扩展：自定义规则与玩法插件 |
+| `network.db` | 持久化存储（会话、状态、玩家数据） |
+
+---
+
+## 🧩 已内置的 Agent（默认 Agent 体系）
+
+### 🎩 DM Agent（通用主持人）
+
+文件：`agents/dm.yaml`
+
+DM 是系统中的 **主持人 / 裁判 / 叙事引擎**，负责：
+
+- 读取并理解剧本（含 DM-only 真相）
+- 分配身份 / 角色卡
+- 维持规则一致性、处理异常
+- 控制节奏：开场 → 回合 → 线索 → 讨论 → 投票 → 结局
+- 信息隔离：确保玩家只获取应得信息
+
+**推荐配置方向：**
+- 较低 `temperature`（稳定推进）
+- 较高 `max_tokens`（长逻辑与引导）
+- 增加 `reaction_delay`（更像真人主持）
+
+---
+
+### 🛎 Lobby Agent（大厅接待官）
+
+文件：`agents/lobby.yaml`
+
+Lobby 在 `#general` 房间工作，负责：
+
+- 引导玩家进行选本 / 配置  
+  - 人数  
+  - 难度  
+  - 氛围（欢乐 / 严肃 / 硬核）  
+  - 时长  
+  - 主题  
+- 将选择结果 **私发给 DM**，由 DM 做准备并开局  
+
+玩家体验流程：
+
+> 玩家进入 → Lobby 接待选本 → DM 开局主持 → NPC / 玩家推理
+
+---
+
+### 🎭 NPC Agents（角色代理）
+
+目录：`agents/npcs/`
+
+NPC Agent 可以作为：
+
+- 故事人物 / 证人 / 路人
+- 反派 / 阴谋家
+- 社交推理游戏中的「假玩家」
+
+支持即插即用：  
+只需新增 YAML 并在 `network.yaml` 中配置路由。
+
+---
+
+## 🚀 快速开始
+
+### 1）安装 OpenAgents（需要 Python 环境）
+
+```bash
+pip install openagents
+```
+
+验证安装：
+```bash
+openagents --version
+```
+
+---
+
+### 2）启动 Network
+
+```bash
+conda activate openagents
+cd script_world
+openagents network start
+```
+
+Studio 默认地址：
+```
+http://localhost:8700/studio/
+```
+
+---
+
+### 3）配置 GLM-4.7（模型服务）
+
+#### 3.1 创建 API Key
+前往：https://www.bigmodel.cn/
+
+#### 3.2 在 Studio 配置模型
+
+路径：
+```
+Service Proxy → Default Model Config
+```
+
+填写：
+- Provider：Custom OpenAI Compatible  
+- Base URL：https://open.bigmodel.cn/api/paas/v4  
+- Model Name：glm-4.7  
+- API Key：你的 Key  
+
+点击 **Test**，成功即表示配置完成。
+
+---
+
+### 4）启动 ScriptWorld Agents
+
+```bash
+openagents agent start agents/lobby.yaml
+openagents agent start agents/dm.yaml
+openagents agent start agents/npcs/npc_1.yaml
+openagents agent start agents/npcs/npc_2.yaml
+openagents agent start agents/npcs/npc_3.yaml
+```
+
+---
+
+### 5）开始游戏
+
+1. 进入 Workspace → `#general`
+2. 发送 `start`
+3. 选择剧本并确认
+4. DM 开局 → NPC / 玩家进入推理
+
+---
+
+## ⚙️ 配置说明
+
+### Agent 配置示例
+
+```yaml
+type: "openagents.agents.collaborator_agent.CollaboratorAgent"
+agent_id: "dm"
+display_name: "Universal DM"
+
+config:
+  model_name: "glm-4.7"
+  temperature: 0.3
+  max_tokens: 1500
+  react_to_all_messages: false
+  reaction_delay: "random(0.3, 1.2)"
+  instruction: |
+    ...
+```
+
+---
+
+## 🗂️ 目录结构
+
+```text
+script_world/
+├─ agents/
+│  ├─ dm.yaml
+│  ├─ lobby.yaml
+│  └─ npcs/
+├─ scripts/
+├─ scenarios/
+├─ events/
+├─ tools/
+├─ mods/
+├─ logs/
+├─ network.yaml
+└─ network.db
+```
+
+---
+
+## 🧪 自定义扩展
+
+### 创建新剧本
+路径：
+```
+scripts/<your_script_name>/
+```
+
+建议包含：
+- 世界观 / 背景
+- 角色卡
+- 时间线
+- 分轮线索
+- DM-only 真相（单独文件）
+
+---
+
+### 新增 Agent
+1. 新建 YAML
+2. 设置唯一 `agent_id`
+3. 在 `network.yaml` 配置路由
+
+---
+
+## 🗃️ 数据持久化
+
+- `network.db`：会话 / 状态 / 玩家数据
+- `logs/`：运行日志与复盘
+
+---
+
+## 🧰 常见问题
+
+**Agent 不说话**
+- 检查 `network.yaml`
+- 查看 `logs/`
+
+**输出过于发散**
+- 降低 `temperature`
+- 提高 `max_tokens`
+
+---
+
+## 🔒 安全建议
+
+- 剧本包含敏感内容时增加 DM 边界
+- 工具层添加安全过滤
+- 避免存储个人敏感信息
+
+---
+
+## 🙌 致谢
+
+- 架构基于 OpenAgents 协作 Agent 体系  
+- 灵感来自互动小说、社交推理与桌游主持流程  
+- 面向 **剧本杀 / RP / 多智能体编排** 的可扩展底座
