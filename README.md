@@ -33,6 +33,10 @@ ScriptWorld 适合用来：
 
 ScriptWorld 的核心是一个 **Network（网络）**，用于连接房间、玩家与各类 Agent。
 
+!<img src="images/structure.jpg" alt="ScriptWorld structure" width="600">
+
+
+
 ### 核心模块说明
 
 | 模块 | 作用 |
@@ -49,6 +53,8 @@ ScriptWorld 的核心是一个 **Network（网络）**，用于连接房间、�
 ---
 
 ## 🧩 已内置的 Agent（默认 Agent 体系）
+
+!<img src="images/agents.jpg" alt="agents & users interactions" width="700">
 
 ### 🎩 DM Agent（通用主持人）
 
@@ -108,92 +114,125 @@ NPC Agent 可以作为：
 
 ### 1）安装 OpenAgents（需要 Python 环境）
 
+在开始使用 ScriptWorld 之前，首先需要安装 OpenAgents。
+
 ```bash
 pip install openagents
 ```
 
-验证安装：
-```bash
-openagents --version
-```
+### 2）激活 Conda 环境
 
----
-
-### 2）启动 Network
+我们建议使用 Conda 管理依赖和环境，确保系统环境的兼容性。
 
 ```bash
 conda activate openagents
-cd script_world
-openagents network start
 ```
 
-Studio 默认地址：
-```
-http://localhost:8700/studio/
-```
+### 3）启动多智能体网络（Agent Network）
 
----
-
-### 3）配置 GLM-4.7（模型服务）
-
-#### 3.1 创建 API Key
-前往：https://www.bigmodel.cn/
-
-#### 3.2 在 Studio 配置模型
-
-路径：
-```
-Service Proxy → Default Model Config
-```
-
-填写：
-- Provider：Custom OpenAI Compatible  
-- Base URL：https://open.bigmodel.cn/api/paas/v4  
-- Model Name：glm-4.7  
-- API Key：你的 Key  
-
-点击 **Test**，成功即表示配置完成。
-
----
-
-### 4）启动 ScriptWorld Agents
+启动多智能体网络服务，加载 ScriptWorld 的网络拓扑结构并初始化智能体通信机制。
 
 ```bash
-openagents agent start agents/lobby.yaml
-openagents agent start agents/dm.yaml
-openagents agent start agents/npcs/npc_1.yaml
-openagents agent start agents/npcs/npc_2.yaml
-openagents agent start agents/npcs/npc_3.yaml
+openagents network start ~/script_world
 ```
 
----
+### 4）配置大模型相关环境变量
 
-### 5）开始游戏
+配置默认使用的大语言模型（LLM）及其访问方式。
 
-1. 进入 Workspace → `#general`
-2. 发送 `start`
-3. 选择剧本并确认
-4. DM 开局 → NPC / 玩家进入推理
+```bash
+export DEFAULT_LLM_MODEL_NAME="openai-gpt-5-mini"
+export DEFAULT_LLM_PROVIDER="openai-compatible"
+export DEFAULT_LLM_API_KEY="YOUR_API_KEY"
+export DEFAULT_LLM_BASE_URL="https://model-gateway.openagents.org/v1"
+```
 
----
+### 5）启动智能体（Agent）
 
-## ⚙️ 配置说明
+启动以下智能体以实现完整的剧本杀体验：
 
-### Agent 配置示例
+- **启动 Lobby Agent**：负责引导玩家进入游戏并选择剧本。
 
-```yaml
-type: "openagents.agents.collaborator_agent.CollaboratorAgent"
-agent_id: "dm"
-display_name: "Universal DM"
+```bash
+openagents agent start ~/script_world/agents/lobby.yaml
+```
 
-config:
-  model_name: "glm-4.7"
-  temperature: 0.3
-  max_tokens: 1500
-  react_to_all_messages: false
-  reaction_delay: "random(0.3, 1.2)"
-  instruction: |
-    ...
+- **启动 DM Agent**：负责控制剧情进展并分发线索。
+
+```bash
+openagents agent start ~/script_world/agents/dm.yaml
+```
+
+- **启动 NPC Agents**：扮演剧本中的角色并与玩家互动。
+
+```bash
+openagents agent start ~/script_world/agents/npc1.yaml
+openagents agent start ~/script_world/agents/npc2.yaml
+openagents agent start ~/script_world/agents/npc3.yaml
+```
+
+### 6）智能体协作机制（Agent Collaboration）
+
+在 ScriptWorld 中，智能体之间通过 OpenAgents 的网络架构进行高效的协作。每个智能体都负责特定的任务，通过 **gRPC** 协议和 **Messaging Mods** 模块进行消息传递和任务协调。
+
+- **Network Layer**：管理智能体的连接、消息路由和角色信息的分发。
+- **Messaging Mods**：支持智能体之间的消息传递。
+- **Workspace Mods**：用于管理和组织游戏中的工作区与任务。
+
+### 7）用户行为与智能体交互机制（User Actions and Agent Interaction Flow）
+
+用户与 ScriptWorld 的智能体进行交互时，可以通过简洁的指令来控制游戏流程。以下是用户与智能体的典型交互：
+
+1. **剧本选择阶段**：用户选择可用的剧本。
+
+   ```bash
+   A / a   # 选择剧本
+   ```
+
+2. **开局确认阶段**：用户确认是否开始游戏。
+
+   ```bash
+   是 / 否   # 确认开始游戏
+   ```
+
+3. **游戏开始或交互**：用户输入 "游戏开始" 触发游戏流程。
+
+   ```bash
+   游戏开始   # 开始游戏并与智能体进行交互
+   ```
+
+4. **玩家人数选择**：选择游戏中的玩家人数。
+
+   ```bash
+   1 / 2 / 3 / 4   # 选择玩家人数
+   ```
+
+### 8）完整启动流程示例
+
+以下是完整的启动流程，从环境配置到启动多智能体网络。
+
+```bash
+# 1. 安装 OpenAgents
+pip install openagents
+
+# 2. 激活 Conda 环境
+conda activate openagents
+
+# 3. 启动多智能体网络
+openagents network start ~/script_world
+
+# 4. 配置大语言模型相关环境变量
+export DEFAULT_LLM_MODEL_NAME="openai-gpt-5-mini"
+export DEFAULT_LLM_PROVIDER="openai-compatible"
+export DEFAULT_LLM_API_KEY="YOUR_API_KEY"
+export DEFAULT_LLM_BASE_URL="https://model-gateway.openagents.org/v1"
+
+# 5. 启动各个智能体
+openagents agent start ~/script_world/agents/lobby.yaml
+openagents agent start ~/script_world/agents/dm.yaml
+openagents agent start ~/script_world/agents/npc1.yaml
+openagents agent start ~/script_world/agents/npc2.yaml
+openagents agent start ~/script_world/agents/npc3.yaml
 ```
 
 ---
