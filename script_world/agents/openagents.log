@@ -1,0 +1,338 @@
+2026-01-12 08:01:45,047 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 08:01:45,059 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 08:01:45,061 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'dm'
+2026-01-12 08:01:45,063 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 08:01:45,065 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 08:01:45,067 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent dm with file storage at /tmp/openagents_agent_dm_threads_r3ujrkb2
+2026-01-12 08:01:45,069 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent dm
+2026-01-12 08:01:45,071 - openagents.agents.runner - INFO - Updated available tools for agent dm: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 08:01:45,073 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'dm' from agents/dm.yaml
+2026-01-12 08:01:45,094 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 08:01:45,100 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 08:01:45,105 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 08:01:45,109 - openagents.core.client - INFO - Creating gRPC connector for agent dm
+2026-01-12 08:01:45,151 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 08:01:51,161 - openagents.core.connectors.grpc_connector - ERROR - gRPC connection error: <AioRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Socket closed"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:14, grpc_message:"Socket closed"}"
+>
+2026-01-12 08:01:51,165 - openagents.utils.mcp_connector - INFO - Cleaning up MCP clients
+2026-01-12 08:01:51,178 - openagents.core.connectors.grpc_connector - INFO - Agent dm disconnected from gRPC network
+2026-01-12 08:01:51,182 - openagents.utils.mcp_connector - INFO - Cleaning up MCP clients
+2026-01-12 08:01:51,184 - openagents.core.connectors.grpc_connector - INFO - Agent dm disconnected from gRPC network
+2026-01-12 08:06:34,852 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 08:06:34,862 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 08:06:34,864 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'dm'
+2026-01-12 08:06:34,865 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 08:06:34,866 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 08:06:34,867 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent dm with file storage at /tmp/openagents_agent_dm_threads_gqyriw13
+2026-01-12 08:06:34,868 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent dm
+2026-01-12 08:06:34,869 - openagents.agents.runner - INFO - Updated available tools for agent dm: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 08:06:34,871 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'dm' from /home/ubuntu/works/script_world/agents/dm.yaml
+2026-01-12 08:06:34,888 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 08:06:34,895 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 08:06:34,897 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 08:06:34,898 - openagents.core.client - INFO - Creating gRPC connector for agent dm
+2026-01-12 08:06:34,934 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 08:06:34,961 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 08:06:34,962 - openagents.core.client - INFO - 🔧 Starting message polling for  agent dm
+2026-01-12 08:06:34,964 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent dm
+2026-01-12 08:06:34,971 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 08:21:26,165 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 08:21:26,172 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 08:21:26,173 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'Lobby_general'
+2026-01-12 08:21:26,175 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 08:21:26,176 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 08:21:26,177 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent Lobby_general with file storage at /tmp/openagents_agent_Lobby_general_threads_6pguw2do
+2026-01-12 08:21:26,178 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent Lobby_general
+2026-01-12 08:21:26,179 - openagents.agents.runner - INFO - Updated available tools for agent Lobby_general: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 08:21:26,180 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'Lobby_general' from /home/ubuntu/works/script_world/agents/lobby.yaml
+2026-01-12 08:21:26,187 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 08:21:26,190 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 08:21:26,192 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 08:21:26,193 - openagents.core.client - INFO - Creating gRPC connector for agent Lobby_general
+2026-01-12 08:21:26,227 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 08:21:26,250 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 08:21:26,251 - openagents.core.client - INFO - 🔧 Starting message polling for  agent Lobby_general
+2026-01-12 08:21:26,253 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent Lobby_general
+2026-01-12 08:21:26,259 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 08:22:35,538 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: Lobby_general
+2026-01-12 08:22:36,287 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: dm
+2026-01-12 08:25:41,870 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 08:25:41,888 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 08:25:41,890 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'dm'
+2026-01-12 08:25:41,892 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 08:25:41,894 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 08:25:41,896 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent dm with file storage at /tmp/openagents_agent_dm_threads_vnsmtdbp
+2026-01-12 08:25:41,898 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent dm
+2026-01-12 08:25:41,899 - openagents.agents.runner - INFO - Updated available tools for agent dm: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 08:25:41,901 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'dm' from /home/ubuntu/works/script_world/agents/dm.yaml
+2026-01-12 08:25:41,920 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 08:25:41,924 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 08:25:41,926 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 08:25:41,929 - openagents.core.client - INFO - Creating gRPC connector for agent dm
+2026-01-12 08:25:41,984 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 08:25:41,999 - openagents.core.connectors.grpc_connector - ERROR - Agent registration failed: Agent dm already registered with network
+2026-01-12 08:25:42,001 - openagents.utils.mcp_connector - INFO - Cleaning up MCP clients
+2026-01-12 08:25:42,011 - openagents.core.connectors.grpc_connector - INFO - Agent dm disconnected from gRPC network
+2026-01-12 08:25:42,014 - openagents.utils.mcp_connector - INFO - Cleaning up MCP clients
+2026-01-12 08:25:42,016 - openagents.core.connectors.grpc_connector - INFO - Agent dm disconnected from gRPC network
+2026-01-12 08:25:42,071 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 08:25:42,081 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 08:25:42,083 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'Lobby_general'
+2026-01-12 08:25:42,085 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 08:25:42,087 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 08:25:42,089 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent Lobby_general with file storage at /tmp/openagents_agent_Lobby_general_threads_xaet0mcw
+2026-01-12 08:25:42,091 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent Lobby_general
+2026-01-12 08:25:42,093 - openagents.agents.runner - INFO - Updated available tools for agent Lobby_general: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 08:25:42,095 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'Lobby_general' from /home/ubuntu/works/script_world/agents/lobby.yaml
+2026-01-12 08:25:42,108 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 08:25:42,113 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 08:25:42,115 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 08:25:42,117 - openagents.core.client - INFO - Creating gRPC connector for agent Lobby_general
+2026-01-12 08:25:42,167 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 08:25:42,182 - openagents.core.connectors.grpc_connector - ERROR - Agent registration failed: Agent Lobby_general already registered with network
+2026-01-12 08:25:42,184 - openagents.utils.mcp_connector - INFO - Cleaning up MCP clients
+2026-01-12 08:25:42,191 - openagents.core.connectors.grpc_connector - INFO - Agent Lobby_general disconnected from gRPC network
+2026-01-12 08:25:42,194 - openagents.utils.mcp_connector - INFO - Cleaning up MCP clients
+2026-01-12 08:25:42,195 - openagents.core.connectors.grpc_connector - INFO - Agent Lobby_general disconnected from gRPC network
+2026-01-12 08:26:23,129 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 08:26:23,140 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 08:26:23,142 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'dm'
+2026-01-12 08:26:23,143 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 08:26:23,144 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 08:26:23,146 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent dm with file storage at /tmp/openagents_agent_dm_threads_foculasz
+2026-01-12 08:26:23,147 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent dm
+2026-01-12 08:26:23,148 - openagents.agents.runner - INFO - Updated available tools for agent dm: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 08:26:23,149 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'dm' from /home/ubuntu/works/script_world/agents/dm.yaml
+2026-01-12 08:26:23,162 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 08:26:23,165 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 08:26:23,166 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 08:26:23,167 - openagents.core.client - INFO - Creating gRPC connector for agent dm
+2026-01-12 08:26:23,202 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 08:26:23,230 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 08:26:23,232 - openagents.core.client - INFO - 🔧 Starting message polling for  agent dm
+2026-01-12 08:26:23,234 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent dm
+2026-01-12 08:26:23,242 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 08:26:25,251 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 08:26:25,258 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 08:26:25,259 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'Lobby_general'
+2026-01-12 08:26:25,260 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 08:26:25,261 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 08:26:25,263 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent Lobby_general with file storage at /tmp/openagents_agent_Lobby_general_threads_smo9fr0m
+2026-01-12 08:26:25,264 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent Lobby_general
+2026-01-12 08:26:25,265 - openagents.agents.runner - INFO - Updated available tools for agent Lobby_general: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 08:26:25,266 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'Lobby_general' from /home/ubuntu/works/script_world/agents/lobby.yaml
+2026-01-12 08:26:25,273 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 08:26:25,276 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 08:26:25,277 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 08:26:25,278 - openagents.core.client - INFO - Creating gRPC connector for agent Lobby_general
+2026-01-12 08:26:25,312 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 08:26:25,333 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 08:26:25,334 - openagents.core.client - INFO - 🔧 Starting message polling for  agent Lobby_general
+2026-01-12 08:26:25,337 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent Lobby_general
+2026-01-12 08:26:25,342 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 08:27:54,584 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: dm
+2026-01-12 08:27:54,691 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: Lobby_general
+2026-01-12 09:20:14,507 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: dm
+2026-01-12 09:20:14,750 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: Lobby_general
+2026-01-12 09:20:57,117 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 09:20:57,124 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 09:20:57,125 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'Lobby_general'
+2026-01-12 09:20:57,126 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 09:20:57,127 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 09:20:57,128 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent Lobby_general with file storage at /tmp/openagents_agent_Lobby_general_threads_f_tbdh5g
+2026-01-12 09:20:57,130 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent Lobby_general
+2026-01-12 09:20:57,131 - openagents.agents.runner - INFO - Updated available tools for agent Lobby_general: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 09:20:57,132 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'Lobby_general' from /home/ubuntu/works/script_world/agents/lobby.yaml
+2026-01-12 09:20:57,139 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 09:20:57,142 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 09:20:57,144 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 09:20:57,145 - openagents.core.client - INFO - Creating gRPC connector for agent Lobby_general
+2026-01-12 09:20:57,180 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 09:20:57,188 - openagents.core.connectors.grpc_connector - ERROR - Agent registration failed: Agent Lobby_general already registered with network
+2026-01-12 09:20:57,189 - openagents.utils.mcp_connector - INFO - Cleaning up MCP clients
+2026-01-12 09:20:57,196 - openagents.core.connectors.grpc_connector - INFO - Agent Lobby_general disconnected from gRPC network
+2026-01-12 09:20:57,198 - openagents.utils.mcp_connector - INFO - Cleaning up MCP clients
+2026-01-12 09:20:57,199 - openagents.core.connectors.grpc_connector - INFO - Agent Lobby_general disconnected from gRPC network
+2026-01-12 09:21:22,104 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 09:21:22,115 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 09:21:22,116 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'dm'
+2026-01-12 09:21:22,117 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 09:21:22,118 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 09:21:22,120 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent dm with file storage at /tmp/openagents_agent_dm_threads_mvzrt5zb
+2026-01-12 09:21:22,121 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent dm
+2026-01-12 09:21:22,122 - openagents.agents.runner - INFO - Updated available tools for agent dm: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 09:21:22,123 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'dm' from /home/ubuntu/works/script_world/agents/dm.yaml
+2026-01-12 09:21:22,134 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 09:21:22,137 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 09:21:22,139 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 09:21:22,140 - openagents.core.client - INFO - Creating gRPC connector for agent dm
+2026-01-12 09:21:22,173 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 09:21:22,192 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 09:21:22,194 - openagents.core.client - INFO - 🔧 Starting message polling for  agent dm
+2026-01-12 09:21:22,196 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent dm
+2026-01-12 09:21:22,203 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 09:21:24,229 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 09:21:24,235 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 09:21:24,237 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'Lobby_general'
+2026-01-12 09:21:24,238 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 09:21:24,239 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 09:21:24,240 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent Lobby_general with file storage at /tmp/openagents_agent_Lobby_general_threads_rlacakhf
+2026-01-12 09:21:24,241 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent Lobby_general
+2026-01-12 09:21:24,242 - openagents.agents.runner - INFO - Updated available tools for agent Lobby_general: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 09:21:24,243 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'Lobby_general' from /home/ubuntu/works/script_world/agents/lobby.yaml
+2026-01-12 09:21:24,250 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 09:21:24,253 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 09:21:24,255 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 09:21:24,255 - openagents.core.client - INFO - Creating gRPC connector for agent Lobby_general
+2026-01-12 09:21:24,291 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 09:21:24,311 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 09:21:24,313 - openagents.core.client - INFO - 🔧 Starting message polling for  agent Lobby_general
+2026-01-12 09:21:24,315 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent Lobby_general
+2026-01-12 09:21:24,320 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 09:24:02,113 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 09:24:02,124 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 09:24:02,126 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'dm'
+2026-01-12 09:24:02,128 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 09:24:02,129 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 09:24:02,130 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent dm with file storage at /tmp/openagents_agent_dm_threads_0ht0c0fo
+2026-01-12 09:24:02,131 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent dm
+2026-01-12 09:24:02,132 - openagents.agents.runner - INFO - Updated available tools for agent dm: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 09:24:02,133 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'dm' from /home/ubuntu/works/script_world/agents/dm.yaml
+2026-01-12 09:24:02,145 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 09:24:02,148 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 09:24:02,150 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 09:24:02,151 - openagents.core.client - INFO - Creating gRPC connector for agent dm
+2026-01-12 09:24:02,186 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 09:24:02,207 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 09:24:02,208 - openagents.core.client - INFO - 🔧 Starting message polling for  agent dm
+2026-01-12 09:24:02,210 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent dm
+2026-01-12 09:24:02,218 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 09:24:04,245 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 09:24:04,252 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 09:24:04,254 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'Lobby_general'
+2026-01-12 09:24:04,255 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 09:24:04,256 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 09:24:04,258 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent Lobby_general with file storage at /tmp/openagents_agent_Lobby_general_threads_8oo_mfb4
+2026-01-12 09:24:04,259 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent Lobby_general
+2026-01-12 09:24:04,260 - openagents.agents.runner - INFO - Updated available tools for agent Lobby_general: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 09:24:04,261 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'Lobby_general' from /home/ubuntu/works/script_world/agents/lobby.yaml
+2026-01-12 09:24:04,272 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 09:24:04,275 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 09:24:04,276 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 09:24:04,277 - openagents.core.client - INFO - Creating gRPC connector for agent Lobby_general
+2026-01-12 09:24:04,316 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 09:24:04,337 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 09:24:04,338 - openagents.core.client - INFO - 🔧 Starting message polling for  agent Lobby_general
+2026-01-12 09:24:04,340 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent Lobby_general
+2026-01-12 09:24:04,346 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 09:25:04,496 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: dm
+2026-01-12 09:25:04,654 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: Lobby_general
+2026-01-12 09:25:07,939 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-01-12 09:25:07,942 - openagents.agents.orchestrator - ERROR - Error during model interaction: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-demo-***************************************zmy0. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2026-01-12 09:26:15,204 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 09:26:15,215 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 09:26:15,216 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'dm'
+2026-01-12 09:26:15,217 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 09:26:15,218 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 09:26:15,220 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent dm with file storage at /tmp/openagents_agent_dm_threads_gnd4fqcs
+2026-01-12 09:26:15,221 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent dm
+2026-01-12 09:26:15,223 - openagents.agents.runner - INFO - Updated available tools for agent dm: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 09:26:15,224 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'dm' from /home/ubuntu/works/script_world/agents/dm.yaml
+2026-01-12 09:26:15,235 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 09:26:15,238 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 09:26:15,239 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 09:26:15,240 - openagents.core.client - INFO - Creating gRPC connector for agent dm
+2026-01-12 09:26:15,276 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 09:26:15,300 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 09:26:15,302 - openagents.core.client - INFO - 🔧 Starting message polling for  agent dm
+2026-01-12 09:26:15,306 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent dm
+2026-01-12 09:26:15,326 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 09:26:17,228 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 09:26:17,236 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 09:26:17,237 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'Lobby_general'
+2026-01-12 09:26:17,239 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 09:26:17,240 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 09:26:17,241 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent Lobby_general with file storage at /tmp/openagents_agent_Lobby_general_threads_v8dz2tna
+2026-01-12 09:26:17,242 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent Lobby_general
+2026-01-12 09:26:17,243 - openagents.agents.runner - INFO - Updated available tools for agent Lobby_general: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 09:26:17,245 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'Lobby_general' from /home/ubuntu/works/script_world/agents/lobby.yaml
+2026-01-12 09:26:17,252 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 09:26:17,255 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 09:26:17,256 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 09:26:17,257 - openagents.core.client - INFO - Creating gRPC connector for agent Lobby_general
+2026-01-12 09:26:17,294 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 09:26:17,332 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 09:26:17,333 - openagents.core.client - INFO - 🔧 Starting message polling for  agent Lobby_general
+2026-01-12 09:26:17,335 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent Lobby_general
+2026-01-12 09:26:17,341 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 09:27:22,425 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 09:27:22,436 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 09:27:22,438 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'dm'
+2026-01-12 09:27:22,439 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 09:27:22,440 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 09:27:22,441 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent dm with file storage at /tmp/openagents_agent_dm_threads_j23s4rh1
+2026-01-12 09:27:22,442 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent dm
+2026-01-12 09:27:22,443 - openagents.agents.runner - INFO - Updated available tools for agent dm: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 09:27:22,445 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'dm' from agents/dm.yaml
+2026-01-12 09:27:22,456 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 09:27:22,459 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 09:27:22,460 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 09:27:22,461 - openagents.core.client - INFO - Creating gRPC connector for agent dm
+2026-01-12 09:27:22,494 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 09:27:22,517 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 09:27:22,518 - openagents.core.client - INFO - 🔧 Starting message polling for  agent dm
+2026-01-12 09:27:22,521 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent dm
+2026-01-12 09:27:22,528 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 09:27:24,414 - root - INFO - Logging to file: /home/ubuntu/works/script_world/agents/openagents.log
+2026-01-12 09:27:24,422 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 09:27:24,424 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'Lobby_general'
+2026-01-12 09:27:24,425 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 09:27:24,426 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 09:27:24,428 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent Lobby_general with file storage at /tmp/openagents_agent_Lobby_general_threads_k4ehn0z0
+2026-01-12 09:27:24,429 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent Lobby_general
+2026-01-12 09:27:24,430 - openagents.agents.runner - INFO - Updated available tools for agent Lobby_general: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 09:27:24,431 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'Lobby_general' from agents/lobby.yaml
+2026-01-12 09:27:24,438 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 09:27:24,441 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 09:27:24,442 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 09:27:24,443 - openagents.core.client - INFO - Creating gRPC connector for agent Lobby_general
+2026-01-12 09:27:24,477 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 09:27:24,497 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 09:27:24,498 - openagents.core.client - INFO - 🔧 Starting message polling for  agent Lobby_general
+2026-01-12 09:27:24,501 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent Lobby_general
+2026-01-12 09:27:24,506 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-12 09:28:39,774 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: Lobby_general
+2026-01-12 09:28:39,817 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: dm
+2026-01-12 09:28:42,166 - openagents.agents.orchestrator - INFO - Resolved 'auto' model to: provider=openai-compatible, model=openai-gpt-5-mini
+2026-01-12 09:28:53,922 - httpx - INFO - HTTP Request: POST https://model-gateway.openagents.org/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-12 09:28:54,129 - httpx - INFO - HTTP Request: POST https://model-gateway.openagents.org/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-12 09:28:54,131 - openagents.agents.orchestrator - ERROR - Error during model interaction: Error code: 400 - {'detail': 'Backend API error: Error at "/messages/3/tool_call_id": property "tool_call_id" is missing\nSchema:\n  {\n    "properties": {\n      "content": {\n        "description": "The contents of the tool message.",\n        "title": "Text content",\n        "type": "string"\n      },\n      "role": {\n        "description": "The role of the messages author, in this case `tool`.",\n        "enum": [\n          "tool"\n        ],\n        "type": "string",\n        "x-stainless-const": true\n      },\n      "tool_call_id": {\n        "description": "Tool call that this message is responding to.",\n        "type": "string"\n      }\n    },\n    "required": [\n      "role",\n      "content",\n      "tool_call_id"\n    ],\n    "title": "Tool message",\n    "type": "object"\n  }\n\nValue:\n  {\n    "content": "None",\n    "role": "tool"\n  }\n\n'}
+2026-01-12 09:28:54,875 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: Lobby_general | Target: dm
+2026-01-12 09:30:28,241 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: Lobby_general
+2026-01-12 09:30:28,252 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverUnit3284 | Target: dm
+2026-01-12 09:30:31,001 - openagents.agents.orchestrator - INFO - Resolved 'auto' model to: provider=openai-compatible, model=openai-gpt-5-mini
+2026-01-12 09:30:38,200 - httpx - INFO - HTTP Request: POST https://model-gateway.openagents.org/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-12 09:30:38,284 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: Lobby_general | Target: dm
+2026-01-12 09:30:38,375 - httpx - INFO - HTTP Request: POST https://model-gateway.openagents.org/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-01-12 09:30:38,378 - openagents.agents.orchestrator - ERROR - Error during model interaction: Error code: 400 - {'detail': 'Backend API error: Error at "/messages/3/tool_call_id": property "tool_call_id" is missing\nSchema:\n  {\n    "properties": {\n      "content": {\n        "description": "The contents of the tool message.",\n        "title": "Text content",\n        "type": "string"\n      },\n      "role": {\n        "description": "The role of the messages author, in this case `tool`.",\n        "enum": [\n          "tool"\n        ],\n        "type": "string",\n        "x-stainless-const": true\n      },\n      "tool_call_id": {\n        "description": "Tool call that this message is responding to.",\n        "type": "string"\n      }\n    },\n    "required": [\n      "role",\n      "content",\n      "tool_call_id"\n    ],\n    "title": "Tool message",\n    "type": "object"\n  }\n\nValue:\n  {\n    "content": "None",\n    "role": "tool"\n  }\n\n'}
+2026-01-12 20:51:24,976 - root - INFO - Logging to file: /Users/jixintong/script_world_fixed/agents/openagents.log
+2026-01-12 20:51:24,983 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-12 20:51:24,984 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'dm'
+2026-01-12 20:51:24,984 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-12 20:51:24,985 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-12 20:51:24,986 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent dm with file storage at /var/folders/65/f021zzz941dbyj_hkx_8c9c00000gn/T/openagents_agent_dm_threads_fnopfi_q
+2026-01-12 20:51:24,987 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent dm
+2026-01-12 20:51:24,987 - openagents.agents.runner - INFO - Updated available tools for agent dm: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-12 20:51:24,988 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'dm' from /Users/jixintong/script_world_fixed/agents/dm.yaml
+2026-01-12 20:51:25,011 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-12 20:51:25,012 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-12 20:51:25,012 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-12 20:51:25,013 - openagents.core.client - INFO - Creating gRPC connector for agent dm
+2026-01-12 20:51:25,116 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-12 20:51:25,141 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-12 20:51:25,142 - openagents.core.client - INFO - 🔧 Starting message polling for  agent dm
+2026-01-12 20:51:25,147 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent dm
+2026-01-12 20:51:25,156 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)

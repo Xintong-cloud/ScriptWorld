@@ -1,0 +1,21 @@
+2026-01-13 17:50:03,832 - root - INFO - Logging to file: /Users/jixintong/script_world/agents/npcs/openagents.log
+2026-01-13 17:50:03,836 - openagents.utils.agent_loader - INFO - Processed 1 enabled mods: ['openagents.mods.workspace.messaging']
+2026-01-13 17:50:03,837 - openagents.utils.agent_loader - INFO - Creating openagents.agents.collaborator_agent.CollaboratorAgent instance with ID 'npc_2'
+2026-01-13 17:50:03,838 - openagents.utils.mod_loaders - INFO - Successfully loaded mod adapter: openagents.mods.workspace.messaging
+2026-01-13 17:50:03,839 - openagents.utils.mod_loaders - INFO - Instantiated adapter for openagents.mods.workspace.messaging (no args)
+2026-01-13 17:50:03,840 - openagents.mods.workspace.messaging.adapter - INFO - Initializing Thread Messaging protocol for agent npc_2 with file storage at /var/folders/65/f021zzz941dbyj_hkx_8c9c00000gn/T/openagents_agent_npc_2_threads_sjv0zyrw
+2026-01-13 17:50:03,840 - openagents.core.client - INFO - Registered mod adapter ThreadMessagingAgentAdapter with agent npc_2
+2026-01-13 17:50:03,841 - openagents.agents.runner - INFO - Updated available tools for agent npc_2: ['send_direct_message', 'send_channel_message', 'reply_channel_message', 'list_channels', 'retrieve_channel_messages', 'retrieve_direct_messages', 'react_to_message']
+2026-01-13 17:50:03,842 - openagents.utils.agent_loader - INFO - Successfully loaded openagents.agents.collaborator_agent.CollaboratorAgent 'npc_2' from /Users/jixintong/script_world/agents/npcs/npc_2.yaml
+2026-01-13 17:50:03,854 - openagents.core.client - INFO - ✅ Successfully retrieved health check from http://localhost:8702/api/health
+2026-01-13 17:50:03,856 - openagents.core.client - INFO - Detected network: MultiAgentChatroom (chatroom-1)
+2026-01-13 17:50:03,857 - openagents.core.client - INFO - Transport: grpc, Host: localhost, Port: 8600
+2026-01-13 17:50:03,858 - openagents.core.client - INFO - Creating gRPC connector for agent npc_2
+2026-01-13 17:50:03,987 - openagents.core.connectors.grpc_connector - INFO - Connecting to gRPC server at localhost:8600
+2026-01-13 17:50:04,003 - openagents.core.connectors.grpc_connector - INFO - Connected to gRPC network successfully
+2026-01-13 17:50:04,004 - openagents.core.client - INFO - 🔧 Starting message polling for  agent npc_2
+2026-01-13 17:50:04,011 - openagents.core.client - INFO - 🔧 CLIENT: Starting message polling for agent npc_2
+2026-01-13 17:50:04,016 - openagents.agents.runner - INFO - Supported mod: openagents.mods.workspace.messaging (v1.0.0)
+2026-01-13 17:50:24,150 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverNode2937 | Target: npc_2
+2026-01-13 17:51:07,373 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverNode2937 | Target: npc_2
+2026-01-13 17:51:38,543 - openagents.core.client - INFO - 📥 RECEIVED EVENT: thread.channel_message.notification | Source: CleverNode2937 | Target: npc_2
