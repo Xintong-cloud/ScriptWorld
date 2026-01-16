@@ -29,6 +29,17 @@ ScriptWorld 适合用来：
 
 ---
 
+## 🗂️ 说明文档
+https://ncnc2x027mdk.feishu.cn/wiki/K1Siw2R4Niwxw3kE1WocyTSPnVd?from=from_copylink
+
+---
+
+## 🎥 视频展示(点击图片可跳转链接查看)
+https://youtu.be/EA3FDZPn1BM
+[![Demo Video](images/youtube.jpg)](https://youtu.be/kjzcFEUG21w)
+
+---
+
 ## 🧠 架构概览
 
 ScriptWorld 的核心是一个 **Network（网络）**，用于连接房间、玩家与各类 Agent。
